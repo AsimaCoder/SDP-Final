@@ -94,6 +94,7 @@ public class CharacterFactory {
 }
 
 
+
 Observer:
 ![Observer](https://github.com/AsimaCoder/SDP-Final/assets/129418969/41775af2-59da-49a5-96d5-813efcb4af08)
 
