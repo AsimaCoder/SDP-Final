@@ -11,7 +11,7 @@
 
 ## Project Overview 🎮
 </br>
-> The Mortal Combat Game System is a Java-based project aimed at delivering an immersive gaming experience with a focus on the renowned Mortal Kombat theme. This initiative revolves around creating a dynamic gaming platform where users can select and control their chosen hero, each endowed with unique abilities, within a virtual combat environment. </br>
+The Mortal Combat Game System is a Java-based project aimed at delivering an immersive gaming experience with a focus on the renowned Mortal Kombat theme. This initiative revolves around creating a dynamic gaming platform where users can select and control their chosen hero, each endowed with unique abilities, within a virtual combat environment. </br>
 </br>
 The core idea is to establish a robust gaming framework that enables users to engage in dynamic battles by choosing characters from the Mortal Kombat universe. This not only allows players to explore the distinctive abilities of each hero but also adds strategic depth and excitement to the overall gaming experience.</br>
 </br>
