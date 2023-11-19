@@ -20,8 +20,11 @@ import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
+
+        // Create Options object to be able to work with CLI
         Options options = new Options();
 
+        // Name of the Username
         Option nameOption = Option.builder("n")
                 .longOpt("name")
                 .desc("Specify the name of the user")
@@ -30,6 +33,7 @@ public class Main {
                 .required()
                 .build();
 
+        // Choose the character
         Option characterOption = Option.builder("c")
                 .longOpt("character")
                 .desc("Specify the character (Scorpion, SubZero, Smoke)")
@@ -38,6 +42,7 @@ public class Main {
                 .required()
                 .build();
 
+        // Choose type of attack
         Option attackOption = Option.builder("a")
                 .longOpt("attack")
                 .desc("Specify the attack type (basic, special)")
@@ -46,11 +51,13 @@ public class Main {
                 .required()
                 .build();
 
+        // Decorate the attack
         Option decoratorOption = Option.builder("d")
                 .longOpt("decorator")
                 .desc("Apply a decorator to the attack")
                 .build();
 
+        // Use additional power of other character
         Option powerAdapterOption = Option.builder("p")
                 .longOpt("power-adapter")
                 .desc("Use a power adapter to enable another character's power")
@@ -59,10 +66,13 @@ public class Main {
                 .required()
                 .build();
 
+        // To enable notification for observers
         Option observerOption = Option.builder("o")
                 .longOpt("observer")
                 .desc("Enable observer pattern")
                 .build();
+
+        // Implementation
 
         options.addOption(nameOption);
         options.addOption(characterOption);
@@ -132,6 +142,8 @@ public class Main {
         }
     }
 
+
+    // Method for creating characters
     private static Character createCharacter(String characterType) {
         switch (characterType.toLowerCase()) {
             case "scorpion":
@@ -151,6 +163,7 @@ public class Main {
         }
     }
 
+    // Method for creating type of attack
     private static AttackStrategy createAttackStrategy(String attackType) {
         switch (attackType.toLowerCase()) {
             case "basic":
@@ -162,11 +175,14 @@ public class Main {
         }
     }
 
+    // Method for using other character's attack
     private static void usePowerAdapter(Character character) {
         PowerAdapter powerAdapter = new PowerAdapterImpl(character);
         powerAdapter.usePower();
     }
 
+
+    // Method for enabling notification
     private static void enableObserverPattern() {
         // Create a GameNotifier and add an observer
         GameNotifier gameNotifier = new GameNotifier();
@@ -174,6 +190,7 @@ public class Main {
         gameNotifier.notifyObservers(GameManager.getInstance().getUserName());
     }
 
+    // Method for output of character and their attack
     private static void useAttackStrategy(Character character, AttackStrategy attackStrategy) {
         // Set the attack strategy for the character
         // For simplicity, just print the character's attack
@@ -183,6 +200,7 @@ public class Main {
         attackStrategy.rangeOfAttack();
     }
 
+    // Method for output assistance message
     private static void printHelp(Options options) {
         HelpFormatter formatter = new HelpFormatter();
         formatter.printHelp("GameCLI", options);

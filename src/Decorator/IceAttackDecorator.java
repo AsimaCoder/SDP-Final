@@ -9,6 +9,8 @@ public class IceAttackDecorator implements AttackDecorator {
     public IceAttackDecorator(AttackStrategy decoratedStrategy) {
         this.decoratedStrategy = decoratedStrategy;
     }
+
+    // Decorate any attack with ice ability
     @Override
     public void rangeOfAttack() {
         decoratedStrategy.rangeOfAttack();

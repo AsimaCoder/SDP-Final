@@ -9,6 +9,7 @@ public class GameManager {
         // Private constructor to prevent instantiation
     }
 
+    // Single instance implementation
     public static GameManager getInstance() {
         if (instance == null) {
             instance = new GameManager();
@@ -16,13 +17,15 @@ public class GameManager {
         return instance;
     }
 
+    // Get Username
+
     public String getUserName() {
         return userName;
     }
 
+    // Set Username
     public void setUserName(String userName) {
         this.userName = userName;
     }
 
-    // Additional game management methods...
 }

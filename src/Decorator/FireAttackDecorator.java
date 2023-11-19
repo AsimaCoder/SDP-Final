@@ -10,6 +10,7 @@ public class FireAttackDecorator implements AttackDecorator {
         this.decoratedStrategy = decoratedStrategy;
     }
 
+    // Decorate any attack with fire ability
     @Override
     public void rangeOfAttack() {
         decoratedStrategy.rangeOfAttack();

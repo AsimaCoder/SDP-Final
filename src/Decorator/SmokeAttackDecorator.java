@@ -10,6 +10,8 @@ public class SmokeAttackDecorator implements AttackDecorator {
         this.decoratedStrategy = decoratedStrategy;
     }
 
+
+    // Decorate any attack with smoke ability
     @Override
     public void rangeOfAttack() {
         decoratedStrategy.rangeOfAttack();
