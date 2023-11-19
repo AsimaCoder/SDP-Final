@@ -1,5 +1,54 @@
+# SE-2216 Game System Project
+
+## Group: SE-2216
+
+### Team Members:
+- Myrzabai Asima
+- Rasul Aralbayev
+- Daulet Kuttybaev
+
+## Project Overview
+This project is a game system analogous to Mortal Kombat. Players can choose from characters such as Scorpion, Sub-Zero, and Smoke, and utilize their unique abilities. The game allows for the combination of these abilities, offering a dynamic and engaging experience.
+
+## Purpose of the Project
+The primary purpose is to create a versatile and interactive game system that allows players to control and manage various character abilities, similar to other fighting games, but with unique features and gameplay.
+
+## Objectives
+- To develop a game with clear and manageable abilities and objectives.
+- Implement design patterns effectively to enhance the gaming experience.
+- Provide a user-friendly command-line interface for gameplay.
+
+## Features
+- Character selection: Scorpion, Sub-Zero, and Smoke.
+- Unique abilities for each character with the option to combine them.
+- Implementation of design patterns such as Observer, Decorator, Factory, Singleton, and Strategy.
+
+## Project Structure
+The project is structured with a main class for initializing the game and separate classes for each character and their abilities. 
+
+## How to Run
+Instructions on running the game will be provided, ensuring easy access for users.
+
+## UML Diagrams
+UML Diagrams illustrating the project structure and design patterns are included.
+
+## Conclusion
+The project successfully creates a dynamic game system, incorporating various design patterns for a structured and engaging gameplay experience.
+
+## Future Improvements
+- Expanding the character roster and interaction capabilities.
+- Integrating a database for personalized experiences and detailed character attributes.
+- Enhancing game features for a more immersive and extensive experience.
+
+## Design Patterns Used
+- Observer: For notifying changes in game state.
+- Decorator: For combining character abilities.
+- Factory: For creating character instances.
+- Singleton: Ensuring a single instance of a critical game component.
+- Strategy: For varying the algorithm of character abilities.
+
 # SDP-Final
-# RPG Game System
+# Game System
 
 ![RPG Logo](link_to_logo.png)
 
