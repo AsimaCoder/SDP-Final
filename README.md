@@ -41,12 +41,12 @@ Follow these steps to set up the project:
 1. Open your terminal.
 2. Clone the repository:
 ```bash
-   git clone https://github.com/AsimaCoder/SDP-Final.git
+git clone https://github.com/AsimaCoder/SDP-Final.git
 # Navigate to the project directory
 cd SE-2216-Game-System
-In IntelliJ IDEA, navigate to Main.java.
-Run Main.java to start the game.
 ```
+3. In IntelliJ IDEA, navigate to Main.java.
+4. Run Main.java to start the game.
 ## UML Diagrams 📊
 
 > UML Diagrams are provided to offer insights into the architectural design of the game. These diagrams are essential for understanding the interactions between different components of the system.
