@@ -45,3 +45,14 @@ cd SE-2216-Game-System
 
 # Run the game
 java -jar SE2216_Game_System.jar
+## UML Diagrams 📊
+
+> UML Diagrams are provided to offer insights into the architectural design of the game. These diagrams are essential for understanding the interactions between different components of the system.
+
+![UML Diagram](https://img.shields.io/badge/UML-Diagram-blueviolet.svg)
+
+## Future Improvements 🌈
+
+- **Character Expansion**: More characters with unique abilities.
+- **Enhanced Multiplayer**: Global competitive modes.
+- **Technical Upgrades**: Regular updates for VR and AI components.
