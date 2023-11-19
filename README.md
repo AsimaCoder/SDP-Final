@@ -69,6 +69,22 @@ cd SE-2216-Game-System
 
 
 ---
+## Conclusion 🏁
+
+The Mortal Combat Game System has triumphantly achieved its key objectives, introducing a rich gaming experience that encompasses user creation, character customization, and development of unique abilities. This success is attributed to the innovative use of the Decorator and Adapter patterns.
+
+### Key Points of the Project 🔑
+
+- **User and Character Creation**: A user-friendly interface was developed, enabling players to create and customize characters, tailoring their individual gaming experiences.
+- **Decorator Pattern**: This pattern was key in building flexible and dynamic character abilities, allowing for their combination and enhancement.
+- **Adapter Pattern**: Used to integrate diverse abilities, offering a versatile approach in character skill utilization.
+
+### Challenges Faced 😓
+
+- **Project Scale**: Handling the project's extensive scope required meticulous planning and execution.
+- **User-Friendly Command Line Interface**: Implementing an intuitive command line interface was challenging, especially with the integration of the Option object in the main class. These challenges were successfully navigated to ensure a seamless user experience.
+
+---
 
 ## Future Improvements 🌈
 
