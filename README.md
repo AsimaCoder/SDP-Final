@@ -45,11 +45,28 @@ cd SE-2216-Game-System
 
 # Run the game
 java -jar SE2216_Game_System.jar
+```
 ## UML Diagrams 📊
 
 > UML Diagrams are provided to offer insights into the architectural design of the game. These diagrams are essential for understanding the interactions between different components of the system.
 
 ![UML Diagram](https://img.shields.io/badge/UML-Diagram-blueviolet.svg)
+## Design Patterns Used 🛠️
+
+- **Observer**: For real-time notifications and updates.
+- **Decorator**: Enhancing character abilities dynamically.
+- **Factory**: Efficient character creation and management.
+- **Singleton**: Ensuring a single instance of a critical game component.
+- **Strategy**: For flexible gameplay mechanics and character strategies.
+- **Adapter**: Facilitating interaction between incompatible components of the game system.
+
+---
+
+### Show your support
+
+Give a ⭐️ if this project helped or inspired you!
+
+---
 
 ## Future Improvements 🌈
 
