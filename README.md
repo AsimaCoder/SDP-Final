@@ -16,10 +16,9 @@
 ## Features 🚀
 
 - **Character Selection**: Choose from a variety of characters, each with unique abilities. ![Character Badge](https://img.shields.io/badge/Characters-3-green.svg)
-- **Dynamic Gameplay**: Real-time ability evolution and adaptive AI opponents.
+- **Dynamic Gameplay**: Real-time ability evolution and adaptive opponents.
 - **Immersive Environments**: Battlefields that react and change dynamically.
 - **Cross-Platform Play**: Play with friends, no matter their device.
-- **VR Support**: Step into the world of SE-2216 with optional VR integration.
 
 <details>
 <summary><strong>Purpose of the Project</strong></summary>
@@ -61,6 +60,16 @@ cd SE-2216-Game-System
 - **Strategy**: For flexible gameplay mechanics and character strategies.
 - **Adapter**: Facilitating interaction between incompatible components of the game system.
 
+
+
+---
+
+## Future Improvements 🌈
+
+- **Character Expansion**: More characters with unique abilities.
+- **Enhanced Multiplayer**: Global competitive modes.
+- **GUI Enhancement**: Developing a user-friendly graphical interface for improved gameplay interaction.
+
 ---
 ## References
 
@@ -72,15 +81,8 @@ cd SE-2216-Game-System
 - [Strategy Pattern](https://refactoring.guru/design-patterns/strategy)
 
 
+---
 
 ### Show your support
 
 Give a ⭐️ if this project helped or inspired you!
-
----
-
-## Future Improvements 🌈
-
-- **Character Expansion**: More characters with unique abilities.
-- **Enhanced Multiplayer**: Global competitive modes.
-- **Technical Upgrades**: Regular updates for VR and AI components.
