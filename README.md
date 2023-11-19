@@ -78,16 +78,16 @@ The Mortal Combat Game System has triumphantly achieved its key objectives, intr
 
 ### Key Points of the Project 🔑
 
-- **User and Character Creation: The project has successfully implemented a robust system for user and character creation, prioritizing customization. This feature empowers players to craft a gaming experience tailored to their preferences and playstyles.
-- **Decorator Pattern for Abilities: Leveraging the Decorator pattern, the project introduced a novel approach to constructing character abilities. This implementation ensures a dynamic and customizable array of skills, adding depth and personalization to the gaming experience.
-- **Adapter Pattern for Combat Versatility: The use of the Adapter pattern seamlessly integrates various abilities, providing players with a versatile toolkit for combat scenarios. This enhances strategic possibilities and diversifies gameplay.
+- **User and Character Creation**: The project has successfully implemented a robust system for user and character creation, prioritizing customization. This feature empowers players to craft a gaming experience tailored to their preferences and playstyles.
+- **Decorator Pattern for Abilities**: Leveraging the Decorator pattern, the project introduced a novel approach to constructing character abilities. This implementation ensures a dynamic and customizable array of skills, adding depth and personalization to the gaming experience.
+- **Adapter Pattern for Combat Versatility**: The use of the Adapter pattern seamlessly integrates various abilities, providing players with a versatile toolkit for combat scenarios. This enhances strategic possibilities and diversifies gameplay.
 
 ### Challenges Faced 😓
 
 - **Project Scale**: The development team successfully navigated challenges associated with the project's ambitious scale. Issues related to project complexity and the integration of a user-friendly command line interface were effectively addressed, resulting in a functional and engaging gaming system.
 - **User-Friendly Command Line Interface**: Implementing an intuitive command line interface was challenging, especially with the integration of the Option object in the main class. These challenges were successfully navigated to ensure a seamless user experience.
 - **Managing Complexity**: One of the significant challenges was managing the intricacies of a large-scale project. The successful resolution of this challenge reflects the team's adeptness in planning and execution
-- ** Integration of Option Object**; Addressing issues related to integrating the Option object in the main class required meticulous attention. The team's ability to navigate this challenge contributed to a smooth and cohesive user experience.
+- **Integration of Option Object**; Addressing issues related to integrating the Option object in the main class required meticulous attention. The team's ability to navigate this challenge contributed to a smooth and cohesive user experience.
 
 ### Future Improvements 🌈
 
