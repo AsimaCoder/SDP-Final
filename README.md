@@ -85,9 +85,8 @@ The Mortal Combat Game System has triumphantly achieved its key objectives, intr
 - **User-Friendly Command Line Interface**: Implementing an intuitive command line interface was challenging, especially with the integration of the Option object in the main class. These challenges were successfully navigated to ensure a seamless user experience.
 - **Managing Complexity**: One of the significant challenges was managing the intricacies of a large-scale project. The successful resolution of this challenge reflects the team's adeptness in planning and execution
 - ** Integration of Option Object**; Addressing issues related to integrating the Option object in the main class required meticulous attention. The team's ability to navigate this challenge contributed to a smooth and cohesive user experience.
----
 
-## Future Improvements 🌈
+### Future Improvements 🌈
 
 - **Character Expansion**: More characters with unique abilities.
 - **Enhanced Multiplayer**: Global competitive modes.
