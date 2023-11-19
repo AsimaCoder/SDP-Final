@@ -35,16 +35,17 @@ We aim to revolutionize the fighting game genre by blending advanced technology 
 </details>
 
 ## How to Run 🖥️
+**Required JDK**: JDK 21.0.1
+Follow these steps to set up the project:
 
+1. Open your terminal.
+2. Clone the repository:
 ```bash
-# Clone the repository
-git clone https://github.com/your-project-url.git
-
+   git clone https://github.com/AsimaCoder/SDP-Final.git
 # Navigate to the project directory
 cd SE-2216-Game-System
-
-# Run the game
-java -jar SE2216_Game_System.jar
+In IntelliJ IDEA, navigate to Main.java.
+Run Main.java to start the game.
 ```
 ## UML Diagrams 📊
 
