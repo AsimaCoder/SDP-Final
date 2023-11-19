@@ -10,8 +10,14 @@
 | Daulet Kuttybaev | Developer   |
 
 ## Project Overview 🎮
-
-> Inspired by Mortal Kombat, our project is a game system where players choose from characters like Scorpion, Sub-Zero, and Smoke. The twist? Enhanced gameplay mechanics and a unique ability system that will keep you at the edge of your seat!
+</br>
+> The Mortal Combat Game System is a Java-based project aimed at delivering an immersive gaming experience with a focus on the renowned Mortal Kombat theme. This initiative revolves around creating a dynamic gaming platform where users can select and control their chosen hero, each endowed with unique abilities, within a virtual combat environment. </br>
+</br>
+The core idea is to establish a robust gaming framework that enables users to engage in dynamic battles by choosing characters from the Mortal Kombat universe. This not only allows players to explore the distinctive abilities of each hero but also adds strategic depth and excitement to the overall gaming experience.</br>
+</br>
+The primary purpose of this project is to enhance the usability and clarity of the gaming system. By developing an intuitive interface and implementing efficient controls, the Mortal Combat Game System aims to streamline the user experience, making it accessible and enjoyable for both novice and experienced gamers.</br>
+</br>
+Key objectives include implementing a user-friendly interface for character selection and abilities, creating an interactive gaming environment with smooth and responsive controls, enhancing usability through simplified mechanics and tutorials, introducing elements for strategic depth in gameplay, and incorporating user feedback for continuous improvement.</br>
 
 ## Features 🚀
 
