@@ -2,20 +2,15 @@ import Decorator.IceAttackDecorator;
 import Decorator.SmokeAttackDecorator;
 import Singleton.GameManager;
 import org.apache.commons.cli.*;
-import Adapter.PowerAdapter;
-import Adapter.PowerAdapterImpl;
 import Decorator.FireAttackDecorator;
 import Factory.Character;
-import Factory.Scorpion;
-import Factory.Smoke;
-import Factory.SubZero;
-import Observer.ConsoleObserver;
-import Observer.GameNotifier;
 import Strategy.AttackStrategy;
-import Strategy.BasicAttack;
-import Strategy.SpecialAttack;
-
-import java.util.Objects;
+import Adapter.PowerAdapterFactory;
+import Factory.CharacterFactory;
+import Observer.ObserverPatternEnabler;
+import Strategy.AttackStrategyFactory;
+import Strategy.AttackStrategyUser;
+import HelpAssistance.HelpAssistance;
 
 
 public class Main {
@@ -97,8 +92,7 @@ public class Main {
 
             // Enable observer pattern if specified
             if (cmd.hasOption("observer")) {
-                enableObserverPattern();
-                System.out.println("---------------------------------------------------------");
+                ObserverPatternEnabler.enableObserverPattern();
             }
 
             // Retrieve character and attack type
@@ -107,102 +101,39 @@ public class Main {
             String attackType = cmd.getOptionValue("attack");
 
             // Create the specified character using the factory pattern
-            Character character1 = createCharacter(characterType1);
+            Character character1 = CharacterFactory.createCharacter(characterType1);
             System.out.print("( Partner to use their ability.) ");
-            Character character2 = createCharacter(characterType2);
+            Character character2 = CharacterFactory.createCharacter(characterType2);
 
             // Create the specified attack strategy using the strategy pattern
-            AttackStrategy attackStrategy = createAttackStrategy(attackType);
+            AttackStrategy attackStrategy = AttackStrategyFactory.createAttackStrategy(attackType);
 
             // Apply decorator if specified
             if (cmd.hasOption("decorator")) {
-                if(Objects.equals(characterType1, "scorpion")){
-                    attackStrategy = new SmokeAttackDecorator(attackStrategy);
-                } else if (Objects.equals(characterType1, "subzero")) {
-                    attackStrategy = new FireAttackDecorator(attackStrategy);
-                } else if (Objects.equals(characterType1, "smoke")){
-                    attackStrategy = new IceAttackDecorator(attackStrategy);
+                switch (characterType1) {
+                    case "scorpion":
+                        attackStrategy = new SmokeAttackDecorator(attackStrategy);
+                        break;
+                    case "subzero":
+                        attackStrategy = new FireAttackDecorator(attackStrategy);
+                        break;
+                    case "smoke":
+                        attackStrategy = new IceAttackDecorator(attackStrategy);
+                        break;
                 }
-
             }
 
-
-
             // Use the specified attack strategy
-            useAttackStrategy(character1, attackStrategy);
+            AttackStrategyUser.useAttackStrategy(character1, attackStrategy);
 
             // Use a power adapter if specified
             if (cmd.hasOption("power-adapter")) {
-                usePowerAdapter(character2);
+                PowerAdapterFactory.usePowerAdapter(character2);
             }
 
         } catch (ParseException e) {
             System.err.println("Error parsing command line: " + e.getMessage());
-            printHelp(options);
+            HelpAssistance.printHelp(options);
         }
-    }
-
-
-    // Method for creating characters
-    private static Character createCharacter(String characterType) {
-        switch (characterType.toLowerCase()) {
-            case "scorpion":
-                System.out.println("Created character: Scorpion.");
-                System.out.println("---------------------------------------------------------");
-                return new Scorpion();
-            case "subzero":
-                System.out.println("Created character: SubZero.");
-                System.out.println("---------------------------------------------------------");
-                return new SubZero();
-            case "smoke":
-                System.out.println("Created character: Smoke.");
-                System.out.println("---------------------------------------------------------");
-                return new Smoke();
-            default:
-                throw new IllegalArgumentException("Invalid character type. Supported types: scorpion, subzero, smoke");
-        }
-    }
-
-    // Method for creating type of attack
-    private static AttackStrategy createAttackStrategy(String attackType) {
-        switch (attackType.toLowerCase()) {
-            case "basic":
-                return new BasicAttack();
-            case "special":
-                return new SpecialAttack();
-            default:
-                throw new IllegalArgumentException("Invalid attack type. Supported types: basic, special");
-        }
-    }
-
-    // Method for using other character's attack
-    private static void usePowerAdapter(Character character) {
-        PowerAdapter powerAdapter = new PowerAdapterImpl(character);
-        powerAdapter.usePower();
-    }
-
-
-    // Method for enabling notification
-    private static void enableObserverPattern() {
-        // Create a GameNotifier and add an observer
-        GameNotifier gameNotifier = new GameNotifier();
-        gameNotifier.addObserver(new ConsoleObserver());
-        gameNotifier.notifyObservers(GameManager.getInstance().getUserName());
-    }
-
-    // Method for output of character and their attack
-    private static void useAttackStrategy(Character character, AttackStrategy attackStrategy) {
-        // Set the attack strategy for the character
-        // For simplicity, just print the character's attack
-        System.out.println("Performance: ");
-        character.performAttack();
-        System.out.print("Range: ");
-        attackStrategy.rangeOfAttack();
-    }
-
-    // Method for output assistance message
-    private static void printHelp(Options options) {
-        HelpFormatter formatter = new HelpFormatter();
-        formatter.printHelp("GameCLI", options);
     }
 }
