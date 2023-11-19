@@ -62,6 +62,16 @@ cd SE-2216-Game-System
 - **Adapter**: Facilitating interaction between incompatible components of the game system.
 
 ---
+## References
+
+- [Adapter Pattern](https://refactoring.guru/design-patterns/adapter)
+- [Decorator Pattern](https://refactoring.guru/design-patterns/decorator)
+- [Factory Pattern](https://refactoring.guru/design-patterns/factory-method)
+- [Observer Pattern](https://refactoring.guru/design-patterns/observer)
+- [Singleton Pattern](https://refactoring.guru/design-patterns/singleton)
+- [Strategy Pattern](https://refactoring.guru/design-patterns/strategy)
+
+
 
 ### Show your support
 
