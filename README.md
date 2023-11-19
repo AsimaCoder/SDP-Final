@@ -50,6 +50,7 @@ Decorator:
 ![Decorator](https://github.com/AsimaCoder/SDP-Final/assets/129418969/000ff32a-4361-45b7-8446-ce686a9f96e0)
 
 Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors. In our project it provides additional ability to the character.
+
 public class FireAttackDecorator implements AttackDecorator {
     private final AttackStrategy decoratedStrategy;
 
@@ -70,6 +71,7 @@ Factory:
 ![Factory](https://github.com/AsimaCoder/SDP-Final/assets/129418969/9e1d6308-b9b9-49a3-a869-1a430eb39dfc)
 
 Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, but allows subclasses to alter the type of objects that will be created. In our project it allows user to choose the charater and enables them to create that character.
+
 public class CharacterFactory {
     public static Character createCharacter(String characterType) {
         switch (characterType.toLowerCase()) {
@@ -96,6 +98,7 @@ Observer:
 ![Observer](https://github.com/AsimaCoder/SDP-Final/assets/129418969/41775af2-59da-49a5-96d5-813efcb4af08)
 
 Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing. In our code it allows the observes to be notified who entered the game and what is their name.
+
 public class GameNotifier implements Subject {
 
     private final List<Observer> observers = new ArrayList<>();
@@ -129,6 +132,7 @@ Singleton:
 ![Singleton](https://github.com/AsimaCoder/SDP-Final/assets/129418969/3f968c8e-1a31-4f32-b3ba-a992979ba80f)
 
 Singleton is a creational design pattern that lets you ensure that a class has only one instance, while providing a global access point to this instance. In our project ot ensures that there is only one game manager.
+
 public class GameManager {
     private static GameManager instance;
     private String userName;
@@ -162,6 +166,7 @@ Strategy:
 ![Strategy](https://github.com/AsimaCoder/SDP-Final/assets/129418969/01eb8d95-b801-4dbb-9fc4-aa23c2785c4a)
 
 Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable. in our project it allows user to change the abilities of the character.
+
 public class AttackStrategyFactory {
     public static AttackStrategy createAttackStrategy(String attackType) {
         switch (attackType.toLowerCase()) {
