@@ -19,6 +19,9 @@ The primary purpose of this project is to enhance the usability and clarity of t
 </br>
 Key objectives include implementing a user-friendly interface for character selection and abilities, creating an interactive gaming environment with smooth and responsive controls, enhancing usability through simplified mechanics and tutorials, introducing elements for strategic depth in gameplay, and incorporating user feedback for continuous improvement.</br>
 
+![Adapter](https://github.com/AsimaCoder/SDP-Final/assets/129418969/43c33ff4-52ab-4228-aab2-3a6e9e745b5d)
+
+
 ## Features 🚀
 
 - **Character Selection**: Choose from a variety of characters, each with unique abilities. ![Character Badge](https://img.shields.io/badge/Characters-3-green.svg)
